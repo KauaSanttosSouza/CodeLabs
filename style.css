@@ -7,8 +7,7 @@
 :root {
    font-size: 62.5%;
 }
-
-body {
+.information {
    background: linear-gradient(180deg, rgba(0,18,50,1) 0%, rgba(14,51,134,1) 68%, rgba(21,96,189,1) 100%);
    font-family: 'Playfair Display', serif;
 
@@ -19,7 +18,7 @@ body {
 }
 
 .main {
-   margin: 3rem 0 3rem;
+   padding: 3rem 0 3rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -81,6 +80,52 @@ body {
    background: none;
    border: none;
    cursor: pointer;
+
+}
+
+.modal {
+   width: 35rem;
+   height: 22rem;
+   position: absolute;
+   top: 8rem;
+   z-index: 1;
+   
+}
+
+.presentationVideo {
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   width: 35rem;
+   height: 22rem;
+   padding: 0.5rem;
+
+   background: white;
+   border-radius: 1rem;
+   position: absolute;
+}
+
+.presentationVideo button img {
+   width: 1rem;
+   cursor: pointer;
+   transition: all 0.8s;
+}
+.presentationVideo button img:hover {
+   transform: scale(1.2);
+}
+
+.presentationVideo button {
+   background: none;
+   border: none;
+   position: absolute;
+   right: 0.5rem;
+   top: 0.5rem;
+}
+
+.presentationVideo iframe {
+   width: 34rem;
+   height: 19.123rem;
+   border-radius: 1rem;
 }
 
 .AlertClickInMe img {
