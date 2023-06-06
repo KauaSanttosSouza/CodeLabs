@@ -6,6 +6,8 @@
 
 :root {
    font-size: 62.5%;
+
+   --wd-base: 34rem
 }
 .information {
    background: linear-gradient(180deg, rgba(0,18,50,1) 0%, rgba(14,51,134,1) 68%, rgba(21,96,189,1) 100%);
@@ -233,9 +235,24 @@
 
 
 .projects {
-   padding: 3rem 0 3rem;
    background: #F5F5F5;
    font-family: 'Playfair Display', serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem 0 3rem;
+   gap: 4rem;
+}
+
+.titleProjects {
+   border: 1px solid black;
+   border-radius: 1rem;
+
+   width: 30rem;
+   padding: 1rem;
+   text-align: center;
+
 }
 
 .project {
@@ -246,18 +263,48 @@
    gap: 1.6rem;
 }
 
-h1 {
-   text-align: center;
+.project h1 {
+   text-align: left;
    width: 34rem;
 }
 
 .imgProject {
    width: 34rem;
+   border-radius: 1rem;
+
 }
 
 .textProject {
    width: 34rem;
    font-size: 1.4rem;
+}
+
+.techProject {
+   width: 34rem;
+}
+
+.techProject p {
+   background: black;
+   color: white;
+   font-size: 1.4rem;
+   font-weight: 700;
+   border-radius: 1rem 1rem 0 0;
+   padding: 1rem;
+}
+
+.imgTechProject  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   border: 1px solid black;
+   border-radius: 0 0 1rem 1rem;
+   padding: 1rem;
+}
+
+.imgTechProject img:hover {
+   transform: scale(1.2);
+   transition: all 0.8s;
 }
 
 .buttons {
