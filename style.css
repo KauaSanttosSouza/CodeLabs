@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-   margin-top: 3rem;
+   margin: 3rem 0 3rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -68,6 +68,11 @@ body {
    height: 16rem;
    border-radius: 160rem;
    border: 4px solid white;
+   transition: all 0.8s;
+}
+
+.imgKaua img:hover {
+   filter: blur(1px);
 }
 
 .imgKaua {
@@ -75,6 +80,7 @@ body {
    height: 16.6rem;
    background: none;
    border: none;
+   cursor: pointer;
 }
 
 .AlertClickInMe img {
@@ -86,17 +92,20 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 8rem;
+   width: 9rem;
 
    font-weight: 700;
-   font-size: 0.8rem;
+   font-size: 1rem;
    color: white;
    gap: 0.5rem;
    margin: 1rem 0 2rem;
 
-   background: #0039a6;
    padding: 0.5rem;
    border-radius: 5px;
+}
+
+.AlertClickInMe,
+.AlertClickInMe img {
    animation: neon 3s alternate infinite ease-in-out;
 
 }
@@ -115,20 +124,62 @@ body {
    cursor: pointer;
    transition: all 0.8s;
 }
+
 .links img:hover {
   transform: scale(1.2);
 }
-
 
 .links {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 3rem;
-   width: 15rem;
-   padding: 0.2rem;
+   gap: 2rem;
+   padding: 0.5rem;
+   width: 20rem;
 
    border: 1px solid white;
    border-radius: 2rem;
 
 }
+
+.whoAmI {
+   width: 34rem;
+   background: white;
+   padding: 1.5rem;
+   font-size: 1.4rem;
+   
+   border-radius: 0.5rem;
+
+   margin: 2rem 0 3rem;
+}
+
+.textTech {
+   width: 34rem;
+   font-size: 1.4rem;
+   font-weight: 700;
+   padding: 1rem 1rem 0.5rem;
+
+   border-radius: 2rem 2rem 0 0;
+   background: white;
+}
+
+.technologies img {
+   width: 2.7rem;
+   transition: all 0.8s;
+}
+.technologies img:hover {
+   transform: scale(1.2);
+}
+
+.technologies {
+   width: 34rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+
+   border: 1px solid white;
+   padding: 0.8rem;
+   border-radius: 0 0 2rem 2rem;
+}
+
