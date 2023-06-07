@@ -243,7 +243,7 @@
    justify-content: center;
    align-items: center;
    padding: 3rem 0 3rem;
-   gap: 4rem;
+   gap: 8rem;
 }
 
 .titleProjects {
@@ -437,3 +437,98 @@
 
 }
 
+@media (min-width: 750px) {
+:root {
+   --wd-base: 70rem;
+   --fs-base: 2rem;
+}
+
+.name {
+   height: 3rem;
+   width: 12.2rem;
+   margin-bottom: .6rem;
+}
+
+.name img {
+   height: 2rem;
+}
+
+.profession {
+   height: 3rem;
+   width: 24rem;
+}
+
+.profession img {
+   height: 2rem;
+}
+
+.technologies img {
+   width: 6rem;
+}
+
+.technologies {
+   gap: 3rem;
+
+}
+
+.imgKaua {
+   width: var(--wd-base);
+   height: 25rem;
+}
+
+.imgKaua img {
+   width: 25rem;
+   height: 25rem;
+}
+
+.links img {
+   width: 4rem;
+}
+
+.links {
+   width: 30rem;
+}
+
+
+.project h1 {
+   font-size: 3rem;
+}
+
+.titleProjects {
+   font-size: 3rem;
+}
+
+.buttons {
+   justify-content: space-between;
+}
+
+.buttons a {
+   width: 40rem;
+}
+
+.buttons svg {
+   width: 3rem;
+}
+
+
+.modal {
+   width: 75rem;
+   height: 30rem;
+   top: 11rem;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.presentationVideo {
+   width: 60rem;
+   height: 32rem;
+}
+
+.presentationVideo iframe {
+   width: 53rem;
+   height: 30rem;
+}
+
+
+}
