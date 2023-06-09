@@ -10,6 +10,7 @@
    --wd-base: 34rem;
    --fs-base: 1.4rem;
 }
+
 .information {
    background: linear-gradient(180deg, rgba(0,18,50,1) 0%, rgba(14,51,134,1) 68%, rgba(21,96,189,1) 100%);
    font-family: 'Playfair Display', serif;
@@ -21,7 +22,7 @@
 }
 
 .main {
-   padding: 3rem 0 3rem;
+   padding: 2rem 0 2rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -78,7 +79,7 @@
 }
 
 .imgKaua {
-   width: 34rem;
+   width: 16rem;
    height: 16rem;
    background: none;
    border: none;
@@ -185,7 +186,7 @@
    padding: 0.5rem;
    width: 20rem;
 
-   border: 1px solid white;
+   border: 1px solid #F5F5F5;
    border-radius: 2rem;
 
 }
@@ -257,11 +258,12 @@
 }
 
 .project {
-   display: flex;
+   display: grid;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 1.6rem;
+
 }
 
 .project h1 {
@@ -348,6 +350,83 @@
 
 }
 
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact h2 {
+   border: 1px solid black;
+   padding: 1rem 10rem;
+   border-radius: 1rem;
+   margin-bottom: 2rem;
+   font-size: var(--fs-base);
+}
+
+.contact form {
+   display: flex;
+   align-items: left;
+   justify-content: left;
+   flex-direction: column;
+   width: var(--wd-base);
+   font-size: var(--fs-base);
+}
+
+form label {
+   margin-bottom: .5rem;
+   font-size: var(--fs-base);
+}
+
+form input {
+   height: 3rem;
+   border-radius: .5rem;
+   padding: 0.5rem;
+   border: 1px solid black;
+   margin-bottom: 1rem;
+}
+
+form input:focus {
+   border: 1px solid rgba(21,96,189,1);
+}
+
+
+form textarea {
+   height: 10rem;
+   border-radius: .5rem;
+   padding: 0.5rem;
+   border: 1px solid black;
+   margin-bottom: 1rem;
+}
+
+form textarea:focus {
+   border: 1px solid rgba(21,96,189,1);
+   transition: all .8s;
+
+}
+
+form button {
+   border-radius: .5rem;
+   border: 1px solid black;
+   background: none;
+   width: 15rem;
+   padding: 1rem;
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+   font-size: var(--fs-base);
+   cursor: pointer;
+}
+
+form button:hover {
+   background: black;
+   color: white;
+   transition: all .8s;
+}
+
+
+
+
 
 @media (min-width: 450px) {
 :root {
@@ -378,7 +457,7 @@
 }
 
 .imgKaua {
-   width: var(--wd-base);
+   width: 20rem;
    height: 20rem;
 }
 
@@ -472,7 +551,7 @@
 }
 
 .imgKaua {
-   width: var(--wd-base);
+   width: 25rem;
    height: 25rem;
 }
 
@@ -512,17 +591,15 @@
 
 
 .modal {
-   width: 75rem;
+   width: 60rem;
    height: 30rem;
-   top: 11rem;
-   display: flex;
-   justify-content: center;
-   
 }
 
 .presentationVideo {
    width: 60rem;
    height: 32rem;
+   display: flex;
+   justify-content: center;
 }
 
 .presentationVideo iframe {
@@ -530,5 +607,358 @@
    height: 30rem;
 }
 
+
+}
+
+
+@media (min-width: 1024px) {
+  
+body {
+   display: flex;
+}
+
+.information {
+   background: linear-gradient(90deg, rgba(0,18,50,1) 0%, rgba(14,51,134,1) 71%, rgba(21,96,189,1) 100%);
+
+   width: 50%;
+   height: 100vh;
+   position: relative;
+}
+
+
+.name img {
+   width: 1.2rem;
+}
+
+.name {
+   width: 8rem;
+   height: 1.5rem;
+}
+
+.profession img{
+   width: 1.2rem;
+}
+
+.profession {
+   width: 17rem;
+   height: 1.7rem;
+   margin: 0;
+}
+
+.imgKaua img {
+   width: 14rem;
+   height: 14rem;
+}
+
+.imgKaua {
+   margin-top: 2rem;
+   width: 14rem;
+   height: 14rem;
+}
+
+.AlertClickInMe {
+   font-size: 1rem;
+   width: 48rem;
+}
+
+.links img {
+   width: 1.5rem;
+}
+
+.links {
+   width: 16rem;
+   margin: 0;
+   position: absolute;
+   top: 3rem;
+   right: -1rem;
+}
+
+.whoAmI {
+   margin: 0 0 2rem 0;
+   width: 48rem;
+   font-size: 1.2rem;
+}
+
+.technologies img {
+   width: 2.5rem;
+}
+
+.technologies {
+   width: 48rem;
+}
+
+.textTech {
+   font-size: 1.2rem;
+   width: 48rem;
+   height: 2rem;
+   padding: 0.2rem 0.5rem 0 1rem;
+}
+
+
+
+.projects {
+   width: 50%;
+   gap: 0;
+
+   height: 100vh;
+
+   display: grid;
+   overflow-y: scroll;
+}
+
+.project {
+   width: 48rem;
+}
+
+.titleProjects {
+   font-size: 2.5rem;
+   padding: 0.5rem;
+   width: 48rem;
+   margin-bottom: 2rem;
+}
+
+.project h1 {
+   font-size: 2rem;
+   width: 48rem;
+}
+
+.imgProject {
+   width: 48rem;
+}
+
+.textProject {
+   width: 48rem;
+   font-size: 1.4rem;
+}
+
+.techProject {
+   width: 48rem;
+}
+
+.techProject p {
+   font-size: 1.4rem;
+   padding: 0.5rem;
+}
+
+.imgTechProject  {
+   width: 48rem;
+}
+
+.imgTechProject img {
+   width: 3rem
+}
+
+.imgTechProject img:hover {
+   transform: scale(1.2);
+   transition: all 0.8s;
+}
+
+.buttons {
+   width: 48rem;
+   padding: 0.5rem;
+   margin-bottom: 5rem;
+}
+
+.buttons a {
+   font-size: 1.4rem;
+}
+
+.buttons a:hover {
+   background: black;
+   color: white;
+}
+
+.buttons svg {
+   width: 1.4rem;
+}
+
+.modal {
+   width: 41rem;
+   height: 25rem;
+   top: 2rem;
+}
+
+.presentationVideo {
+   width: 41rem;
+   height: 25rem;
+}
+
+.presentationVideo iframe {
+   width: 40rem;
+   height: 22.5rem;
+}
+
+
+
+.contact form {
+   width: 48rem;
+}
+
+.contact label {
+   font-size: 1.6rem;
+}
+
+.contact input {
+   font-size: 1.4rem;
+}
+
+.contact button {
+   font-size: 1.6rem;
+}
+
+}
+
+@media (min-width: 1500px) {
+
+   .name img {
+      width: 1.8rem;
+   }
+   
+   .name {
+      width: 10rem;
+      height: 2.5rem;
+   }
+   
+   .profession img{
+      width: 1.8rem;
+   }
+   
+   .profession {
+      width: 21rem;
+      height: 2.5rem;
+      margin-bottom: 2rem;
+   }
+   
+   .imgKaua img {
+      width: 18rem;
+      height: 18rem;
+   }
+   
+   .imgKaua {
+      width: 18rem;
+      height: 18rem;
+   }
+   
+   .AlertClickInMe {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      width: 48rem;
+      gap: 1rem;
+   }
+   
+   .links img {
+      width: 2rem;
+   }
+   
+   .links {
+      width: 19rem;
+      top: 3rem;
+      right: -1.5rem;
+   }
+   
+   .whoAmI {
+      margin: 0 0 2rem 0;
+      width: 72rem;
+      font-size: 1.5rem;
+   }
+   
+   .technologies img {
+      width: 3rem;
+   }
+   
+   .technologies {
+      width: 58rem;
+   }
+   
+   .textTech {
+      font-size: 1.6rem;
+      width: 58rem;
+      height: 2.5rem;
+   }
+   
+   
+   
+   .project {
+      width: 58rem;
+   }
+   
+   .titleProjects {
+      font-size: 2.5rem;
+      width: 58rem;
+   }
+   
+   .project h1 {
+      font-size: 2rem;
+      width: 58rem;
+   }
+   
+   .imgProject {
+      width: 58rem;
+   }
+   
+   .textProject {
+      width: 58rem;
+      font-size: 1.6rem;
+   }
+   
+   .techProject {
+      width: 58rem;
+   }
+   
+   .techProject p {
+      font-size: 1.6rem;
+   }
+   
+   .imgTechProject  {
+      width: 58rem;
+   }
+   
+   
+   .buttons {
+      width: 58rem;
+   }
+   
+   .buttons a {
+      font-size: 1.6rem;
+   }
+   
+   
+   .buttons svg {
+      width: 1.6rem;
+   }
+   
+   .modal {
+      width: 50rem;
+      height: 25rem;
+      top: 8rem;
+   }
+   
+   .presentationVideo {
+      width: 50rem;
+      height: 27rem;
+   }
+   
+   .presentationVideo iframe {
+      width: 44.4rem;
+      height: 25rem;
+   }
+   
+   
+   
+   .contact form {
+      width: 48rem;
+   }
+   
+   .contact label {
+      font-size: 1.6rem;
+   }
+   
+   .contact input {
+      font-size: 1.4rem;
+   }
+   
+   .contact button {
+      font-size: 1.6rem;
+   }
 
 }
