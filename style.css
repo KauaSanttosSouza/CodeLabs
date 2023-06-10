@@ -676,7 +676,7 @@ body {
 .whoAmI {
    margin: 0 0 2rem 0;
    width: 48rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
 }
 
 .technologies img {
@@ -701,7 +701,6 @@ body {
    gap: 0;
 
    height: 100vh;
-
    display: grid;
    overflow-y: scroll;
 }
